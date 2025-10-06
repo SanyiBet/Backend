@@ -54,14 +54,17 @@ app.post('/api/productos', async (req, res) => {
 });
 
 // Clima
+// Clima
 app.get('/api/clima/:ciudad', async (req, res) => {
   try {
     const { ciudad } = req.params;
-    const response = await axios.get(`${MS_CLIMA}/api/clima/${ciudad}`);
+    // Asegúrate de que MS_CLIMA termina en el puerto correcto y sin slash final
+    const response = await axios.get(`${MS_CLIMA}/clima/${ciudad}`);
     res.json(response.data);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 });
+
 
 module.exports = app;
