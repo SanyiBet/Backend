@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// monta las rutas
+// rutas
 app.use('/api/bodegas', bodegaRoutes);
 
 module.exports = app;
