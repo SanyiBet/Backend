@@ -11,6 +11,4 @@ app.use(express.json());
 // rutas
 app.use('/api/bodegas', bodegaRoutes);
 
-
-// manejo de errores
 module.exports = app;
