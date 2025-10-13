@@ -3,9 +3,9 @@ const service = require('../services/bodega.service');
 exports.listar = async (req, res) => {
   try {
     const bodegas = await service.getBodegas();
-    res.json(bodegas);  // <--- esto debe devolver un array
+    res.json(bodegas);  
   } catch (err) {
-    console.error(err); // agregar log para debug
+    console.error(err); 
     res.status(500).json({ error: err.message });
   }
 };

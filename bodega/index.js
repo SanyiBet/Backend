@@ -1,5 +1,5 @@
 // bodega/index.js
-const app = require('./src/app'); // asegúrate que la ruta es correcta
+const app = require('./src/app'); 
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {

@@ -5,5 +5,5 @@ const app = require('./src/app');
 const PORT = process.env.PORT || 3003;
 
 app.listen(PORT, () => {
-  console.log(`🌤️ MS-Clima corriendo en el puerto ${PORT}`);
+  console.log(` MS-Clima corriendo en el puerto ${PORT}`);
 });

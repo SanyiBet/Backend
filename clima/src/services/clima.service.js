@@ -16,7 +16,6 @@ async function obtenerClima(ciudad, apiKey) {
     );
   } catch (err) {
     console.error(`Error en obtenerClima(${ciudad}):`, err.message || err);
-    // Retornar objeto con temperatura null para que el gateway/frontend pueda manejarlo
     return new Clima(ciudad, null, 'Error obteniendo clima');
   }
 }
